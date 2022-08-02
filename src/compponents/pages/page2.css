@@ -1,0 +1,25 @@
+.page2-container{
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    height:90%;
+}
+/* .page2-container a{
+    text-decoration:none;
+    padding: 2px;
+    border: 1px solid rgb(99, 6, 6);
+    
+} */
+.page2-container div{
+    text-align:center;
+    border: 1px solid #000;
+    padding :.5em;
+    width: 45%;
+}
+#back-btn{
+    font-size: 1em;
+    padding:.5em;
+    border-radius: 10px;
+    cursor:pointer;
+    
+}

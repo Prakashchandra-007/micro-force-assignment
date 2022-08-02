@@ -2,5 +2,9 @@
     background-color:darkgray;
     height: 300px;
     width: 300px;
-    position:relative;
+    position:absolute;
+    
+}
+.floating-block:active{
+    cursor:grabbing;
 }
