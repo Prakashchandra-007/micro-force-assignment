@@ -3,7 +3,7 @@ import "./float.css";
 import { useSelector, useDispatch } from "react-redux";
 function FloatBlock() {
   const dispatch = useDispatch();
-  const [posi, setPosi] = useState({ x: 30, y: 30 });
+  const [posi, setPosi] = useState({});
   let styles = {
     border: "3px solid #457ccd",
     display: "flex",
@@ -24,7 +24,6 @@ function FloatBlock() {
   }
 
   function handleDrag(e) {
-    
     setPosi({
       x: e.clientX,
       y: e.clientY,
