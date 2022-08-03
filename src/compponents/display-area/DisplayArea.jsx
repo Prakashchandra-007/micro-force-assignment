@@ -28,9 +28,11 @@ const DisplayArea = () => {
       alignItems: "flex-end",
     };
   }
-
+  function allowDrop(e){
+    e.preventDefault();
+  }
   return (
-    <div style={styleState} className="display-area">
+    <div style={styleState} onDragOver={allowDrop} className="display-area">
       <FloatBlock />
     </div>
   );

@@ -7,7 +7,10 @@ function FloatBlock() {
   let styles = {
     border: "3px solid #457ccd",
     display: "flex",
-    transform: `translate(${posi.x}px, ${posi.y}px)`,
+    // transformOrigin: 'top left',
+    // transform: `translate(${posi.x}px, ${posi.y}px)`,
+    top:`${posi.y}px`,
+    left:`${posi.x}px`
   };
   const restart = useSelector((state) => state.restart);
   const show = useSelector((state) => state.show); //decide the bloack with none of block
@@ -24,6 +27,7 @@ function FloatBlock() {
   }
 
   function handleDrag(e) {
+    e.preventDefault();
     setPosi({
       x: e.clientX,
       y: e.clientY,
